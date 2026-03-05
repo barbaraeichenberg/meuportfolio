@@ -13,7 +13,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-base text-light antialiased selection:bg-gray-700 selection:text-white">
-    
+    <!-- ✅ LOADING OVERLAY FULLSCREEN -->
+<div id="loadingOverlay" aria-live="polite" aria-label="Carregando portfólio">
+  <div id="loadingCenter">
+    <canvas id="loadingCubeCanvas" width="560" height="420" aria-hidden="true"></canvas>
+
+    <div id="loadingBar" aria-hidden="true">
+      <div id="loadingBarFill"></div>
+    </div>
+
+    <div id="loadingText">compilando wireframe...</div>
+  </div>
+</div>
     <header class="fixed w-full top-0 z-50 bg-base/90 backdrop-blur-md border-b border-line transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="font-bold text-xl tracking-tight">Bárbara Eichenberg</a>
